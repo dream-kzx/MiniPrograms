@@ -1,0 +1,17 @@
+---------------------------------------------------------------
+[ 2018-05-22T16:36:33+08:00 ] 111.59.124.145 GET /api/banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.033164s][吞吐率：30.15req/s] [内存消耗：3,469.28kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2018-05-22T16:36:37+08:00 ] 111.59.124.145 POST /api/Token/user
+[ info ] www.guetused.top/api/Token/user [运行时间：0.248661s][吞吐率：4.02req/s] [内存消耗：3,322.15kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002392s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  `openid` = 'oyKA95aeisZH87vnR6uYOABfOch4' LIMIT 1 [ RunTime:0.000512s ]

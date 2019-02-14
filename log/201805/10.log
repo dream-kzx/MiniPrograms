@@ -1,0 +1,418 @@
+---------------------------------------------------------------
+[ 2018-05-10T18:33:52+08:00 ] 111.59.124.151 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.044151s][吞吐率：22.65req/s] [内存消耗：3,476.86kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001550s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY create_time desc [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:33:52+08:00 ] 111.59.124.151 GET /api/Banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/Banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.062754s][吞吐率：15.94req/s] [内存消耗：3,390.98kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013648s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:33:56+08:00 ] 111.59.124.151 GET /api/Goods?id=4
+[ info ] www.guetused.top/api/Goods?id=4 [运行时间：0.034122s][吞吐率：29.31req/s] [内存消耗：3,758.02kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000445s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (10,11,12) [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:33:59+08:00 ] 111.59.124.151 GET /api/Goods?id=4
+[ info ] www.guetused.top/api/Goods?id=4 [运行时间：0.034482s][吞吐率：29.00req/s] [内存消耗：3,758.02kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (10,11,12) [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:34:11+08:00 ] 111.59.124.151 GET /api/Goods?id=2
+[ info ] www.guetused.top/api/Goods?id=2 [运行时间：0.062120s][吞吐率：16.10req/s] [内存消耗：3,758.02kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003685s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000932s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3) [ RunTime:0.000323s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:34:27+08:00 ] 223.104.91.247 GET /api/Banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/Banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.048189s][吞吐率：20.75req/s] [内存消耗：3,390.71kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002708s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.001365s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.001388s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.000432s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:34:27+08:00 ] 223.104.91.247 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.069749s][吞吐率：14.34req/s] [内存消耗：3,476.63kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002708s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.001113s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY create_time desc [ RunTime:0.002146s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.001203s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.004501s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:34:45+08:00 ] 223.104.91.247 GET /api/Banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/Banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.074956s][吞吐率：13.34req/s] [内存消耗：3,390.82kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008940s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.002407s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.002011s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.001928s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.001304s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.001600s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:34:45+08:00 ] 223.104.91.247 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.072760s][吞吐率：13.74req/s] [内存消耗：3,476.54kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001895s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY create_time desc [ RunTime:0.001701s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.002075s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.001263s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.004988s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:35:21+08:00 ] 223.104.91.247 GET /api/Banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/Banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.065258s][吞吐率：15.32req/s] [内存消耗：3,390.82kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002077s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001177s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.001186s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.002196s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:35:21+08:00 ] 223.104.91.247 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.065898s][吞吐率：15.17req/s] [内存消耗：3,476.58kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001997s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.001251s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY create_time desc [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.002530s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.001521s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.004842s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:35:43+08:00 ] 223.104.91.247 GET /api/Banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/Banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.055776s][吞吐率：17.93req/s] [内存消耗：3,390.71kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002975s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.001218s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.001482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.002257s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.000831s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:35:44+08:00 ] 223.104.91.247 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.070725s][吞吐率：14.14req/s] [内存消耗：3,476.63kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002157s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY create_time desc [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.001442s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.002068s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.001137s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.004472s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:35:49+08:00 ] 223.104.91.247 GET /api/TypeLocation?type=11&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/TypeLocation?type=11&location=%E5%8C%97%E4%BA%AC [运行时间：0.066749s][吞吐率：14.98req/s] [内存消耗：3,476.84kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018726s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `type` = 11  AND `location` = '北京' [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000779s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:35:51+08:00 ] 223.104.91.247 GET /api/Goods?id=4
+[ info ] www.guetused.top/api/Goods?id=4 [运行时间：0.038399s][吞吐率：26.04req/s] [内存消耗：3,757.76kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000450s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (10,11,12) [ RunTime:0.000374s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:36:08+08:00 ] 223.104.91.247 GET /api/Goods?id=2
+[ info ] www.guetused.top/api/Goods?id=2 [运行时间：0.035413s][吞吐率：28.24req/s] [内存消耗：3,757.66kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3) [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:36:11+08:00 ] 223.104.91.247 GET /api/Goods?id=2
+[ info ] www.guetused.top/api/Goods?id=2 [运行时间：0.034170s][吞吐率：29.27req/s] [内存消耗：3,757.66kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000480s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3) [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:36:14+08:00 ] 223.104.91.247 GET /api/Goods?id=3
+[ info ] www.guetused.top/api/Goods?id=3 [运行时间：0.033621s][吞吐率：29.74req/s] [内存消耗：3,757.66kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 3 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 3 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 3 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (7,8,9) [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:36:20+08:00 ] 223.104.91.247 GET /api/Goods?id=1
+[ info ] www.guetused.top/api/Goods?id=1 [运行时间：0.034953s][吞吐率：28.61req/s] [内存消耗：3,757.74kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (4,5,6) [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:38:09+08:00 ] 111.59.124.151 GET /api/Goods?id=2
+[ info ] www.guetused.top/api/Goods?id=2 [运行时间：0.034739s][吞吐率：28.79req/s] [内存消耗：3,758.02kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 2 LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 2 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3) [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:38:11+08:00 ] 111.59.124.151 GET /api/Goods?id=1
+[ info ] www.guetused.top/api/Goods?id=1 [运行时间：0.033680s][吞吐率：29.69req/s] [内存消耗：3,758.09kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (4,5,6) [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:41:11+08:00 ] 223.104.91.247 GET /api/Goods?id=4
+[ info ] www.guetused.top/api/Goods?id=4 [运行时间：0.037720s][吞吐率：26.51req/s] [内存消耗：3,757.82kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000535s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.003054s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 4 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (10,11,12) [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2018-05-10T18:41:14+08:00 ] 223.104.91.247 GET /api/Goods?id=1
+[ info ] www.guetused.top/api/Goods?id=1 [运行时间：0.033846s][吞吐率：29.55req/s] [内存消耗：3,757.74kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (4,5,6) [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:51:36+08:00 ] 111.59.124.151 GET /api/banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.032846s][吞吐率：30.45req/s] [内存消耗：3,426.57kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:51:37+08:00 ] 111.59.124.151 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.037496s][吞吐率：26.67req/s] [内存消耗：3,512.85kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY `create_time` DESC [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:51:38+08:00 ] 111.59.124.151 GET /api/TypeLocation?type=11&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/TypeLocation?type=11&location=%E5%8C%97%E4%BA%AC [运行时间：0.038513s][吞吐率：25.97req/s] [内存消耗：3,511.88kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000544s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `type` = 11  AND `location` = '北京' [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000644s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:51:39+08:00 ] 111.59.124.151 GET /api/Goods?id=1
+[ info ] www.guetused.top/api/Goods?id=1 [运行时间：0.034413s][吞吐率：29.06req/s] [内存消耗：3,793.88kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000463s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (4,5,6) [ RunTime:0.000304s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:51:41+08:00 ] 111.59.124.151 GET /api/Goods?id=1
+[ info ] www.guetused.top/api/Goods?id=1 [运行时间：0.035801s][吞吐率：27.93req/s] [内存消耗：3,793.88kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (4,5,6) [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:52:15+08:00 ] 111.59.124.151 GET /api/Goods?id=1
+[ info ] www.guetused.top/api/Goods?id=1 [运行时间：0.036167s][吞吐率：27.65req/s] [内存消耗：3,793.89kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000504s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (4,5,6) [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:52:19+08:00 ] 111.59.124.151 GET /api/Goods?id=1
+[ info ] www.guetused.top/api/Goods?id=1 [运行时间：0.036290s][吞吐率：27.56req/s] [内存消耗：3,793.88kb] [文件加载：52]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000487s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `goods` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` = 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (4,5,6) [ RunTime:0.000347s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:52:20+08:00 ] 111.59.124.151 GET /api/TypeLocation?type=11&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/TypeLocation?type=11&location=%E5%8C%97%E4%BA%AC [运行时间：0.035936s][吞吐率：27.83req/s] [内存消耗：3,511.88kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `type` = 11  AND `location` = '北京' [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (1,2,3,4) [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:52:21+08:00 ] 111.59.124.151 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.037259s][吞吐率：26.84req/s] [内存消耗：3,512.84kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000459s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.002239s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY `create_time` DESC [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:52:21+08:00 ] 111.59.124.151 GET /api/NewGoods?location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/NewGoods?location=%E5%8C%97%E4%BA%AC [运行时间：0.036084s][吞吐率：27.71req/s] [内存消耗：3,512.84kb] [文件加载：47]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_location` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `type_location` WHERE  `location` = '北京' ORDER BY `create_time` DESC [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods` [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `goods_image` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT `id`,`title`,`price`,`image_item` FROM `goods` WHERE  `id` IN (4,3,2,1) ORDER BY `create_time` [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `goods_image` WHERE  `goods_id` IN (1,2,3,4) [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_goods` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_goods` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11,12) [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2018-05-10T21:52:22+08:00 ] 111.59.124.151 GET /api/banner?id=1&location=%E5%8C%97%E4%BA%AC
+[ info ] www.guetused.top/api/banner?id=1&location=%E5%8C%97%E4%BA%AC [运行时间：0.030981s][吞吐率：32.28req/s] [内存消耗：3,426.74kb] [文件加载：46]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:host=127.0.0.1;dbname=store;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `banner` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `banner_item` [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `banner_item` WHERE  `location` = '北京'  AND `banner_id` = 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `image_by_banner` [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `image_by_banner` WHERE  `id` IN (1,2,3) [ RunTime:0.000316s ]
